@@ -6,9 +6,9 @@ The get_next_line() function reads and returns the next line from a given file d
 Reads one line at a time, including the newline character (\n) if present.
 Uses a static buffer to optimize performance and minimize read() system calls.
 Handles EOF (End of File) properly:
-If there is data left in the buffer, it returns it as the last line.
-If the buffer is empty, it returns NULL.
-Each returned line is allocated dynamically and must be freed by the caller.
-At EOF, all allocated memory (except the returned line) is released.
+
+If there is data left in the buffer, it returns it as the last line. If the buffer is empty, it returns NULL.
+
+Each returned line is allocated dynamically and must be freed by the caller. At EOF, all allocated memory (except the returned line) is released.
 
 No norminette applied.
